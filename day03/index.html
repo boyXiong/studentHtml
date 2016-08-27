@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        h1{
+            background-color: red;
+        }
+
+        #testID{
+            background-color: cornflowerblue;
+        }
+
+        .testClass1{
+            background-color: aqua;
+        }
+
+        .testClass2{
+            text-decoration: underline;;
+        }
+
+        .div1 div .div3 p{
+            color: red;
+        }
+
+        p.jiaoji{
+            color: yellow;
+        }
+
+        .bingji01 , .bingji02 {
+            color: aqua;
+        }
+
+        ul li:first-child{
+            color: cornflowerblue;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+<h1> 标签选择器</h1>
+
+<h2 id="testID"> id 选择器</h2>
+
+<!--通过空格可以让一个标签继承两个class-->
+<h3 class="testClass1 testClass2"> 类 选择器</h3>
+
+
+<div class="div1">
+    <div class="div2">
+        <div class="div3">
+            <div class="div4">
+                <p>我就试试,后代关系</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jiaoji">
+
+    <p class="jiaoji"> 我是交集,一般用 标签选择器开头 p.jiaoji IE 7 后才支持</p>
+</div>
+
+<p class="bingji01">我是一个并集就是 或 的意思</p>
+<p class="bingji02">我是一个并集就是 或 的意思</p>
+
+
+<ul>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+    <li>测试</li>
+</ul>
+
+</body>
+</html>
