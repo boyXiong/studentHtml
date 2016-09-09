@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--权重-->
+    <!--第一等：代表内联样式，如: style=””，权值为1000。-->
+    <!--第二等：代表ID选择器，如：#content，权值为100。-->
+    <!--第三等：代表类，伪类和属性选择器，如.content，权值为10。-->
+    <!--第四等：代表类型选择器和伪元素选择器，如div p，权值为1。-->
+    <!--css 辅助样式  html负责结构 js 负责行为-->
+    <style type="text/css">
+        #father #son{
+            color: red;
+        }
+        
+        #father .c2{
+            color: green;
+        }
+        
+        .c1 .c2{
+            color: blue;
+        }
+
+        /*亲儿子*/
+        #box1 div{
+            color: red;
+        }
+
+        #box2{
+            color: blue;
+        }
+
+        .space1 p{
+            color: red;
+        }
+
+        .space2{
+            color: blue !important;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<div id="father" class="c1">
+    
+    <p id="son" class="c2">
+        看看我是什么颜色
+    </p>
+</div>
+
+<div id="box1">
+    <div>
+        <div id="box2">我是啥颜色</div>
+    </div>
+</div>
+
+<div class="space1">
+    <p class="space2"> important 加了之后,在同等选择到的情况下, 权重无穷大, 无法提升继承的权重</p>
+</div>
+
+
+</body>
+</html>
